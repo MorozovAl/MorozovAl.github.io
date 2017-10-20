@@ -97,9 +97,9 @@ a:visited {
     height: 31vw;
     width: 404%;
 
-    -webkit-animation: slide 20s ease-out 2s alternate;
+    -webkit-animation: slide 20s ease-out 2s alternate infinite;
 
-            animation: slide 20s ease-out 2s alternate;
+            animation: slide 20s ease-out 2s alternate infinite;
     background-color: black;
     color: white;
 }
@@ -775,6 +775,7 @@ a:visited {
     .content__huge-block {
         border-radius: 0.75vw 0.75vw 0.75vw 0.75vw;
         height: 18.642vw;
+        border: 0.09vw solid grey;
     }
 
     .huge-block__hover {
@@ -917,6 +918,7 @@ a:visited {
     .content__huge-block {
         height: 37.284vw;
         border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+        border: 0.18vw solid grey;
     }
 
     .huge-block__hover {
