@@ -3,6 +3,7 @@ body {
 
     font-size: 1vw;
     font-family: 'Roboto', sans-serif;
+    background-color: black;
     background-image: url(../img/bg/bg2.jpg);
     background-size: contain;
 }
@@ -167,9 +168,9 @@ a:visited {
     height: 31vw;
     width: 404%;
 
-    -webkit-animation: slide 20s ease-out 2s alternate;
+    -webkit-animation: slide 20s ease-out 2s alternate infinite;
 
-            animation: slide 20s ease-out 2s alternate;
+            animation: slide 20s ease-out 2s alternate infinite;
     background-color: black;
     color: white;
 }
@@ -943,11 +944,6 @@ a:visited {
             -ms-transform: translateY(-1.6vw);
                 transform: translateY(-1.6vw);
     }
-
-    .links {
-        width: 18vw;
-        font-size: 2.25vw;
-    }
 }
 
 @media screen and (max-width: 980px) {
@@ -1095,7 +1091,6 @@ a:visited {
     .copyright {
         width: 40vw;
         font-size: 3vw;
-
     }
 
     .links {
@@ -1105,7 +1100,6 @@ a:visited {
         width: 28vw;
         font-size: 4vw;
     }
-
 }
 
 @media screen and (max-width: 645px) {
@@ -1126,8 +1120,8 @@ a:visited {
     }
     
     .content-main {
-        width: 96vw;
-        margin: 12vw auto;
+        width: 96%;
+        margin: 50px auto;
     }
     
     .content {
@@ -1245,6 +1239,18 @@ a:visited {
     .footer {
         margin-top: 13.29vw;
         height: 19.935vw;
+    }
+    
+    .copyright {
+        position: relative;
+        top: 5vw;
+        width: 45vw;
+        font-size: 3vw;
+    }
+    
+    .links {
+        position: relative;
+        top: 9vw;
     }
 }
 
