@@ -19,10 +19,25 @@
             <div class="logo">
                 <a><img src="http://cdn.dota2.com/apps/dota2/images/nav/logo.png"></img></a>
             </div>
-
+            
+            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+            <label class="btn-menu" for="hmt">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+            <ul class="hidden-menu">
+                <li><a href="news.html">Новости</a></li>  
+                <li><a href="">Гайды</a></li>
+                <li><a href="">Стримы</a></li>  
+                <li><a href="">Медиа</a></li>  
+                <li><a href="">Обновления</a></li>
+                <li><a href="">Команды</a></li>  
+            </ul>
+            
             <ul class="navigation">
-                <a href="" title="news"><li class="navigation__item">НОВОСТИ</li></a>
-                <a href="" title="cybersport"><li class="navigation__item">КИБЕРСПОРТ</li></a>
+                
+                <a href="news.html" title="news"><li class="navigation__item">НОВОСТИ</li></a>
                 <a href="" title="guide"><li class="navigation__item">ГАЙДЫ</li></a>
                 <a href="" title="stream"><li class="navigation__item">СТРИМЫ</li></a>
                 <a href="" title="media"><li class="navigation__item">МЕДИА</li></a>
@@ -50,9 +65,7 @@
                     </div>
                 </div>
                 <div class="slider__static-item">
-                    <div class="slider__slogan">
-                        МЫ ЗНАЕМ ОБ ЭТОЙ ИГРЕ ВСЁ
-                    </div>
+                            МЫ ЗНАЕМ ОБ ЭТОЙ ИГРЕ ВСЁ
                 </div>
             </div>
 
@@ -61,10 +74,7 @@
         <!--MENUBAR-->
         <ul class="menubar">
             <li class="menubar__item">
-                <a href="" title="news"><span class="icon-news"></span></a>
-            </li>
-            <li class="menubar__item">
-                <a href="" title="cybersport"><span class="icon-gamepad"></span></a>
+                <a href="news.html" title="news"><span class="icon-news"></span></a>
             </li>
             <li class="menubar__item">
                 <a href="" title="guide"><span class="icon-guide-dog"></span></a>
@@ -90,10 +100,10 @@
                 <a href="" title="news"><span class="content__name">Новости</span></a>
                 <div class="content__huge-block">
                     <div class="huge-block__hover">Liquid &ndash; Чемпионы</div>
-                    <a href="" title="liquid"><img src="assets/img/content/news/liquid.jpg" alt="Team liquid champions!"></img></a>
+                    <a href="news.html#liquid" title="liquid"><img src="assets/img/content/news/liquid.jpg" alt="Team liquid champions!"></img></a>
                 </div>
                 
-                <a href="" title="unofficial stream">
+                <a href="news.html#unofficical" title="unofficial stream">
                     <div class="content__small-block">
                         <div class="content__small-block__left"><img src="assets/img/content/news/casper.jpg" alt="commentator сasper"></img></div>
                         <div class="content__small-block__right">
@@ -103,7 +113,7 @@
                     </div>
                 </a>
                 
-                <a href="" title="PGL group">
+                <a href="news.html#PGL" title="PGL group">
                     <div class="content__small-block">
                         <div class="content__small-block__left"><img src="assets/img/content/news/bucharest.jpg" alt="Group on PGL"></div>
                         <div class="content__small-block__right">
@@ -113,7 +123,7 @@
                     </div>
                 </a>
                 
-                <a href="" title="TNC boost">
+                <a href="news.html#TNC" title="TNC boost">
                     <div class="content__small-block">
                         <div class="content__small-block__left"><img src="assets/img/content/news/tnc.jpg" alt="Logo TNC"></div>
                         <div class="content__small-block__right">
@@ -123,7 +133,7 @@
                     </div>
                 </a>
                 
-                <a href="" title="stream open">
+                <a href="news.html#openstream" title="stream open">
                     <div class="content__small-block">
                         <div class="content__small-block__left"><img src="assets/img/content/news/stream_valve.jpg" alt="Monkey king"></div>
                         <div class="content__small-block__right">

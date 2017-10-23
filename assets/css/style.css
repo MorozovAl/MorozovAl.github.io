@@ -47,6 +47,78 @@ a:visited {
 
 /*HEADER----NAVIGATION*/
 
+.hidden-menu {
+  display: none;
+  position: fixed;
+  list-style:none;
+  padding: 10px;
+  width: calc(60%);
+  margin: 0 auto;
+
+  box-sizing: border-box;
+  background-color: #666;
+  top: -100%;
+  left: 50px;
+  transition: top 0.8s;
+  color: #fff;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+
+.hidden-menu a {
+    font-size: 8vw;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.hidden-menu-ticker {
+  display: none;
+}
+.btn-menu {
+  display: none;
+  color: #fff;
+  background-color: #666;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 25px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px 0 0;
+  transition: all 0.3s linear ;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  top: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+
 .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -54,21 +126,19 @@ a:visited {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-
+    flex-wrap: wrap;
     width: 50%;
-    height: 4vw;
     margin: 0 auto;
     padding-left: 0;
     list-style: none;
-
-    font-size: 0.85vw;
-    line-height: 3.9vw;
+    
+    padding: 1.5vw 0;
+    font-size: 1vw;
     text-align: center;
+    
 }
 
 .navigation__item {
-    float: left;
-
     color: grey;
 }
 
@@ -97,9 +167,9 @@ a:visited {
     height: 31vw;
     width: 404%;
 
-    -webkit-animation: slide 20s ease-out 2s alternate infinite;
+    -webkit-animation: slide 20s ease-out 2s alternate;
 
-            animation: slide 20s ease-out 2s alternate infinite;
+            animation: slide 20s ease-out 2s alternate;
     background-color: black;
     color: white;
 }
@@ -179,8 +249,9 @@ a:visited {
 .slider__static-item {
     display: block;
     position: absolute;
-    left: 0;
-    top: 0;
+    z-index: 10;
+    left: 0vw;
+    top: 0vw;
 
     width: 41%;
     height: 12vw;
@@ -192,34 +263,25 @@ a:visited {
     background: rgba(128, 128, 128, 0.6);
     -webkit-box-shadow: 0 0 35px 12px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 35px 12px rgba(0, 0, 0, 0.6);
-}
-
-.slider__slogan {
-    margin-top: 12%;
-
+    text-align: center;
     font-size: 2vw;
     color: rgba(255, 255, 255, 1);
-    text-align: center;
+    line-height: 12vw;
 }
 
 /*MENUBAR*/
 
 .menubar {
     position: absolute;
-    left: -8.3vw;
-    /*  -138px/1600  */
-    width: 12.025vw;
-    /*  200px/1600px  */
-    height: 28.75vw;
-    /*  460px/1600px  */
-    margin: 6.912vw 0.1vw 0.1vw 0.1vw;
-    /*  109px/1600 */
+    left: -8.3vw; /*  -138px/1600  */
+    width: 12.025vw; /*  200px/1600px  */
+
+    margin: 6.912vw 0.1vw 0.1vw 0.1vw; /*  109px/1600 */
     list-style: none;
     padding-left: 0;
 
     background-color: rgba(245, 245, 245, 0.08);
-    font-size: 1vw;
-    /*  16px/1600  */
+    font-size: 1vw; /*  16px/1600  */
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     -o-transition: transform 1s;
@@ -257,7 +319,6 @@ a:visited {
 }
 
 .icon-news,
-.icon-gamepad,
 .icon-guide-dog,
 .icon-twitch,
 .icon-play-video,
@@ -274,10 +335,6 @@ a:visited {
 
 .icon-news::after {
     content: "Новости";
-}
-
-.icon-gamepad::after {
-    content: "Киберспорт";
 }
 
 .icon-guide-dog::after {
@@ -301,7 +358,6 @@ a:visited {
 }
 
 .icon-news::after,
-.icon-gamepad::after,
 .icon-guide-dog::after,
 .icon-twitch::after,
 .icon-play-video::after,
@@ -319,7 +375,6 @@ a:visited {
 }
 
 .icon-news:hover,
-.icon-gamepad:hover,
 .icon-guide-dog:hover,
 .icon-twitch:hover,
 .icon-play-video:hover,
@@ -329,7 +384,6 @@ a:visited {
 }
 
 .icon-news:hover::after,
-.icon-gamepad:hover::after,
 .icon-guide-dog:hover::after,
 .icon-twitch:hover::after,
 .icon-play-video:hover::after,
@@ -592,7 +646,7 @@ a:visited {
 
 .mathces__across {
     position: absolute;
-    margin-top: 5.5vw;
+    margin-top: 5.6vw;
 
     width: 100%;
     height: 1vw;
@@ -610,9 +664,9 @@ a:visited {
 
 .matches__element:hover .mathces__across {
     display: block;
-    -webkit-transform: translateY(-1vw);
-        -ms-transform: translateY(-1vw);
-            transform: translateY(-1vw);
+    -webkit-transform: translateY(-1.12vw);
+        -ms-transform: translateY(-1.11vw);
+            transform: translateY(-1.11vw);
 }
 
 
@@ -724,8 +778,21 @@ a:visited {
 
 @media screen and (max-width: 1400px) {
     .navigation {
-        font-size: 1.1vw;
+        font-size: 1.6vw;
         width: 64.766%;
+    }
+    
+    .navigation__item {
+        width: 20vw;
+        margin: 1vw auto;
+    }
+    .slider__static-item {
+         top: 7vw;
+    }
+    
+    .logo {
+        top: 3vw;
+        width: 14vw;
     }
 
     .menubar__item {
@@ -733,7 +800,6 @@ a:visited {
     }
 
     .icon-news:hover,
-    .icon-gamepad:hover,
     .icon-guide-dog:hover,
     .icon-twitch:hover,
     .icon-play-video:hover,
@@ -743,7 +809,6 @@ a:visited {
     }
 
     .icon-news::after,
-    .icon-gamepad::after,
     .icon-guide-dog::after,
     .icon-twitch::after,
     .icon-play-video::after,
@@ -857,7 +922,7 @@ a:visited {
     .mathces__across {
         margin-top: 8.35vw;
 
-        height: 1.5vw;
+        height: 1.4vw;
 
         border-radius: 0 0 0.75vw 0.75vw;
     }
@@ -885,20 +950,30 @@ a:visited {
     }
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 980px) {
     .content {
         width: 72.217vw;
         margin-top: 7vw;
     }
 
     .navigation {
-        font-size: 1.8vw;
+        font-size: 2.4vw;
         width: 85.901%
     }
-
+    
+    .navigation__item {
+        width: 22vw;
+        margin: 1vw auto;
+    }
+    
     .logo {
         display: none;
     }
+    
+    .slider__static-item {
+         top: 8.6vw;
+    }
+    
     .menubar {
         display: none;
     }
@@ -1001,7 +1076,7 @@ a:visited {
     .mathces__across {
         margin-top: 12.525vw;
 
-        height: 2.25vw;
+        height: 2.2vw;
 
         border-radius: 0 0 1.125vw 1.125vw;
     }
@@ -1031,6 +1106,146 @@ a:visited {
         font-size: 4vw;
     }
 
+}
+
+@media screen and (max-width: 645px) {
+    .navigation {
+        display: none;
+    }
+    
+    .slider {
+        display: none;
+    }
+    
+    .btn-menu {
+        display: block;
+    }
+    
+    .hidden-menu {
+        display: block;
+    }
+    
+    .content-main {
+        width: 96vw;
+        margin: 12vw auto;
+    }
+    
+    .content {
+        width: 100%;
+        margin: 8vw auto;
+    }
+    
+    
+    .content__name {
+        font-size: 5.98vw;
+        margin-top: -7.84vw;
+    }
+
+
+
+    .content__huge-block {
+        height: 49.55vw;
+        border-radius: 1.99vw 1.99vw 1.99vw 1.99vw;
+        border: 0.239vw solid grey;
+    }
+
+    .huge-block__hover {
+        margin-top: 49.55vw;
+        height: 7.97vw;
+        font-size: 5.98vw;
+        border-radius: 0 0 1.99vw 1.99vw;
+        line-height: 7.97vw;
+    }
+
+    .content__huge-block:hover .huge-block__hover {
+        -webkit-transform: translateY(-7.97vw);
+            -ms-transform: translateY(-7.97vw);
+                transform: translateY(-7.97vw);
+    }
+    
+    .content__small-block {
+        width: 100%;
+        height: 22.781vw;
+        font-size: 3.189vw;
+    }
+
+    .content__stream {
+        width: 100%;
+        height: 47.844vw;
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4;
+        margin-top: 8vw;
+        font-size: 3.987vw;
+    }
+
+    .stream__element {
+        height: 9.289vw;
+        line-height: 9.289vw;
+    }
+
+    .stream__element img {
+        float: right;
+
+        width: 9.289vw;
+    }
+
+    .content__matches {
+        -webkit-box-ordinal-group: 6;
+            -ms-flex-order: 5;
+                order: 5;
+        margin-top: 8vw;
+        width: 100%;
+        height: 66.45vw;
+        font-size: 2.591vw;
+    }
+
+
+    .matches__element {
+        width: 44.853vw;
+        height: 16.446vw;
+
+        border-radius: 1.495vw;
+    }
+
+
+    .matches__tournament {
+        height: 2.99vw;
+        border-radius: 1.495vw 1.495vw 0 0;
+    }
+
+    .matches__opponents {
+        margin-top: 1.495vw;
+    }
+
+    .matches__opponents__flag {
+        margin-top: -0.897vw;
+    }
+
+    .mathces__time {
+        height: 2.99vw;
+
+        border-radius: 0 0 1.495vw 1.495vw;
+    }
+
+    .mathces__across {
+        margin-top: 16.645vw;
+
+        height: 2.923vw;
+
+        border-radius: 0 0 1.495vw 1.495vw;
+    }
+
+    .matches__element:hover .mathces__across {
+        -webkit-transform: translateY(-3.189vw);
+            -ms-transform: translateY(-3.189vw);
+                transform: translateY(-3.189vw);
+    }
+
+    .footer {
+        margin-top: 13.29vw;
+        height: 19.935vw;
+    }
 }
 
 
