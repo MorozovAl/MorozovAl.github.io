@@ -10,7 +10,7 @@ hr {
     color: white;
     background-color: white;
     height: 0.01vw;
-    margin: 1vw;
+    margin: 40px 1vw;
 }
 
 a {
@@ -31,16 +31,35 @@ a {
     color:#ff9900;
 }
 
-.block__photo {
-    width: 100%;
-}
-
 .block__photo img {
     width: 100%;
 }
 
 .block__text img {
     width: 1.2vw;
+}
+
+.block__photo {
+    width: 100%;
+}
+
+.block__text a {
+    color: steelblue;
+    
+}
+
+.block__text a:hover {
+    color: lightskyblue;
+}
+
+iframe {
+    width: 50%;
+    height: 20vw;
+}
+
+blockquote {
+    background-color: rgba(245, 245, 245, 0.1);
+    padding: 0.5vw;
 }
 
 @media screen and (max-width: 1400px) {
@@ -53,15 +72,12 @@ a {
         width: 1.645vw;
     }
     
-    .footer {
-        height: 7.5vw;
+    iframe {
+        margin: 0 auto;
+        width: 70%;
+        height: 30vw;
     }
     
-    .copyright {
-        width: 20vw;
-        
-        font-size: 1.5vw;
-    }
 }
 
 @media screen and (max-width: 980px) {
@@ -74,18 +90,10 @@ a {
         width: 2.35vw;
     }
     
-    .footer {
-        height: 15vw;
-    }
-    
-    .copyright {
-        width: 28vw;
-        
-        font-size: 2.2vw;
-    }
-    
-    .links  {
-        font-size: 3vw;
+    iframe {
+        margin: 0 auto;
+        width: 85%;
+        height: 35vw;
     }
 }
 
@@ -105,7 +113,9 @@ a {
         margin: 50px auto;
     }
     
-    .footer {
-        height: 19.935vw;
+    iframe {
+        margin: 0 auto;
+        width: 100%;
+        height: 51vw;
     }
 }

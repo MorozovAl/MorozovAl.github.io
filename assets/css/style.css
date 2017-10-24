@@ -776,7 +776,6 @@ a:visited {
     color: silver;
 }
 
-
 @media screen and (max-width: 1400px) {
     .navigation {
         font-size: 1.6vw;
