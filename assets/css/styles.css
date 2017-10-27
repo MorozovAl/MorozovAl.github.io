@@ -70,99 +70,6 @@ blockquote {
 }
 
 
-/*For team.html  */
-
-.container__flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    width: 74.41vw;
-    margin-left: 12.195vw;
-    margin-top: 6.912vw;
-    padding: 1vw;
-
-    background-color: rgba(245, 245, 245, 0.1);
-}
-
-.block-team {
-    position: relative;
-
-    width: 30vw;
-    height: 30vw;
-    margin: 1vw;
-
-    color: whitesmoke;
-}
-
-.block-team:hover {
-    background-color: rgba(245, 245, 245, 0.1);
-}
-
-.backfaces {
-    overflow: hidden;
-}
-
-.back table {
-    width: 100%;
-    height: 65%;
-}
-
-.back span {
-    display: block;
-
-    margin-top: 3vw;
-
-    text-align: center;
-}
-
-td {
-    text-align: center;
-    font-weight: lighter;
-}
-
-input {
-    display: none;
-}
-
-
-.front,
-.back {
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-    backface-visibility: hidden;
-    overflow: hidden;
-
-    transition: 1s;
-    cursor: pointer;
-}
-
-.front img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-
-    width: 100%;
-    margin: auto;
-}
-
-.backfaces .back {
-    transform: rotateY(180deg);
-}
-
-.flipers:checked+.backfaces .front {
-    transform: rotateY(180deg);
-}
-
-.flipers:checked+.backfaces .back {
-    transform: rotateY(360deg);
-}
-
 @media screen and (max-width: 1400px) {
     .block {
         font-size: 1.374vw;
@@ -177,10 +84,6 @@ input {
         margin: 0 auto;
         width: 70%;
         height: 30vw;
-    }
-
-    .block-team {
-        font-size: 1.3vw;
     }
 }
 
@@ -198,18 +101,6 @@ input {
         margin: 0 auto;
         width: 85%;
         height: 35vw;
-    }
-
-    .block-team {
-        width: 100%;
-        height: 74.41vw;
-        margin-top: 2.5vw;
-
-        font-size: 2vw;
-    }
-
-    .back span {
-        margin-top: 6.285vw;
     }
 }
 
@@ -233,22 +124,5 @@ input {
         margin: 0 auto;
         width: 100%;
         height: 51vw;
-    }
-
-    .container__team {
-        width: 96%;
-        margin: 50px auto;
-    }
-
-    .block-team {
-        width: 100%;
-        height: 96vw;
-        margin-top: 6vw;
-
-        font-size: 3vw;
-    }
-
-    .back span {
-        margin-top: 9.285vw;
     }
 }

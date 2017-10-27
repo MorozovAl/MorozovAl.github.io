@@ -1,7 +1,6 @@
 .wrapper .active {
-    border-bottom: 1px solid whitesmoke;
-    color: #01839a;
-    background-color: whitesmoke;
+    color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.1);
 }
 
 .wrapper {
@@ -19,11 +18,12 @@
     position: relative;
     z-index: 2;
 
-    margin-bottom: -1px;
-    padding: 0.5em 1em;
-    border: 1px solid silver;
+    width: 7vw;
+    padding: 10px 0;
     border-radius: 3px 3px 0 0;
-
+    margin-left: 15px;
+    
+    text-align: center;
     cursor: pointer;
     background-color: silver;
 }
@@ -35,10 +35,9 @@
     justify-content: space-between;
 
     padding: 1vw;
-    border: 1px solid silver;
     border-radius: 3px;
 
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.1);
 }
 
 .iframe__block {
@@ -57,14 +56,14 @@
     border-radius: 0.5vw;
     border: 1px solid white;
     overflow: hidden;
-    transition:all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .tab__item__photo:hover {
-    box-shadow: 0 0 1vw black;
-     -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
+    box-shadow: 0 0 1vw white;
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
 }
 
 .tab__item__photo img {
@@ -72,7 +71,7 @@
 }
 
 @media screen and (max-width: 1400px) {
-    
+
     .wrapper {
         margin-top: 3.5vw;
     }
@@ -81,7 +80,7 @@
         width: 100%;
         height: 40vw;
     }
-    
+
     .video-content {
         height: 100%;
     }
@@ -89,20 +88,26 @@
     .tabs {
         margin-left: 1.2vw;
     }
-    
+
     .tab {
-        font-size: 1.5vw
+        font-size: 1.5vw;
+        width: 10.5vw;
+    }
+
+    .tab__item__photo {
+        width: 34vw;
+        height: 25.45vw;
     }
 
 }
 
 @media screen and (max-width: 980px) {
-   
+
 
 
     .wrapper {
         width: 96%;
-        
+
         margin-left: auto;
         margin-right: auto;
     }
@@ -111,13 +116,19 @@
         width: 100%;
         height: 52vw;
     }
-    
+
     .tabs {
         margin-left: 1.8vw;
     }
-    
+
     .tab {
-        font-size: 2.2vw
+        font-size: 2.2vw;
+        width: 15.4vw;
+    }
+    
+    .tab__item__photo {
+        width: 46%;
+        height: 32vw;
     }
 
 }
@@ -127,12 +138,18 @@
     .wrapper {
         margin-top: 50px;
     }
-    
+
     .tabs {
         margin-left: 2vw;
     }
-    
+
     .tab {
-        font-size: 3vw
+        font-size: 3vw;
+        width: 21vw;
+    }
+
+    .tab__item__photo {
+        width: 100%;
+        height: 66vw;
     }
 }
