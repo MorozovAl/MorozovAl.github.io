@@ -1,19 +1,19 @@
-.block {
+.stream__block {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(245,245,245,0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     margin: auto;
     display: none;
     z-index: 100;
 }
 
-.block iframe {
+.stream__block iframe {
     position: fixed;
-    width: 620px;
-    height: 378px;
+    width: 50vw;
+    height: 30.5vw;
     top: 0;
     bottom: 0;
     right: 0;
@@ -34,5 +34,91 @@
 
 .content__huge-block img {
     width: 100%;
+
+}
+
+@media screen and (max-width: 1400px) {
+    .stream {
+        width: 35vw;
+    }
+
+    .content__huge-block {
+        height: 22vw;
+    }
+
+    .huge-block__hover {
+        margin-top: 22vw;
+        height: 3.5vw;
+        font-size: 2.9vw;
+        border-radius: 0 0 0.75vw 0.75vw;
+    }
+
+    .content__huge-block:hover .huge-block__hover {
+        -webkit-transform: translateY(-3.5vw);
+        -ms-transform: translateY(-3.5vw);
+        transform: translateY(-3.5vw);
+    }
+    
+    .stream__block iframe {
+        width: 65vw;
+        height: 40.1vw;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .stream {
+        width: 100%;
+    }
+
+    .content__huge-block {
+        height: 38vw;
+    }
+
+    .huge-block__hover {
+        margin-top: 38vw;
+        height: 5vw;
+        font-size: 4.205vw;
+        border-radius: 0 0 0.75vw 0.75vw;
+    }
+
+    .content__huge-block:hover .huge-block__hover {
+        -webkit-transform: translateY(-4.9vw);
+        -ms-transform: translateY(-4.9vw);
+        transform: translateY(-4.9vw);
+    }
+    
+    .stream__block iframe {
+        width: 80vw;
+        height: 49.3vw;
+    }
+}
+
+
+@media screen and (max-width: 645px) {
+    .stream {
+        width: 100%;
+    }
+
+    .content__huge-block {
+        height: 57vw;
+    }
+
+    .huge-block__hover {
+        margin-top: 57vw;
+        height: 7.6vw;
+        font-size: 6.39vw;
+        border-radius: 0 0 0.75vw 0.75vw;
+    }
+
+    .content__huge-block:hover .huge-block__hover {
+        -webkit-transform: translateY(-7.55vw);
+        -ms-transform: translateY(-7.55vw);
+        transform: translateY(-7.55vw);
+    }
+    
+    .stream__block iframe {
+        width: 90vw;
+        height: 55.5vw;
+    }
 
 }

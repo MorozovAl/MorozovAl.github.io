@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://file.myfontastic.com/47pqL9qoLQkPdd2tmY4j5o/icons.css" rel="stylesheet">
-    <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" media="screen,projection" href="assets/css/ui.totop.css" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -118,9 +119,8 @@
                         С <strong>12</strong> по <strong>15</strong> октября прошли <strong>Lan</strong>-финалы первого <strong>minor</strong> турнира этого сезона с призовым фондом в триста тысяч долларов и <strong>300</strong> очков <strong>DPC</strong>                        (
                         <strong>Dota Pro Circuit</strong>). <strong>8</strong> сильнейших командбыли разделены на две группы, и лишь половина из них прошли в плей-офф. Сильно подвели своих фанатов коллективы из Китая: ни <img src="https://dota2.ru/img/flags/cn.png"
                             alt="flag" title="country of team"> <strong>ViciGaming</strong>, ни <img src="https://dota2.ru/img/flags/cn.png" alt="flag" title="country of team"> <strong>Newbee</strong> не смогли выиграть не единой карты за весь турнир.
-                        <img
-                            src="https://dota2.ru/img/flags/ua.png" alt="flag" title="country of team"> <strong>Na`Vi</strong> уверенно сыграли в первый игровой день, однако всё же уступили <img src="https://dota2.ru/img/flags/world.png" alt="flag" title="country of team"> <strong>Team Secret</strong>в матче-реванше и разделили
-                            <strong>5-6</strong> место с гостями из Бразилии <img src="https://dota2.ru/img/flags/br.png" alt="flag" title="country of team"> <strong>SG e-sports</strong>.
+                        <img src="https://dota2.ru/img/flags/ua.png" alt="flag" title="country of team"> <strong>Na`Vi</strong> уверенно сыграли в первый игровой день, однако всё же уступили <img src="https://dota2.ru/img/flags/world.png" alt="flag" title="country of team">                        <strong>Team Secret</strong>в матче-реванше и разделили
+                        <strong>5-6</strong> место с гостями из Бразилии <img src="https://dota2.ru/img/flags/br.png" alt="flag" title="country of team"> <strong>SG e-sports</strong>.
                     </p>
 
                     <p>
@@ -138,9 +138,10 @@
                         <a href="https://clips.twitch.tv/DreamyPoliteHorseDxCat" target="_blank"> прекрасный момент</a> с убийством <img src="https://dota2.ru/img/flags/jr.png" alt="flag" title="country of team"> <strong>Miracle-</strong>. Однако, несмотря
                         на всё еще хороший драфт, в третьей игре
                         <img src="https://dota2.ru/img/flags/ph.png" alt="flag" title="country of team"> <strong>Mineski</strong> начали совершать очень грубые ошибки, коих чемпионы <strong>TI7</strong> прощать не собирались. Разбитые и подавленные
-                        <img
-                            src="https://dota2.ru/img/flags/ph.png" alt="flag" title="country of team"> <strong>Mineski</strong> уже не смоглисобраться на решающую для них карту. Таким образом, <img src="https://dota2.ru/img/flags/world.png" alt="flag" title="country of team"> <strong>TeamLiquid</strong> побеждают со счетом <strong>3-1</strong>                            по картам истановятся двукратными чемпионами турниров серии <strong>Starladder i-League Invitational</strong>. Они зарабатывают сто тридцать пять тысяч долларов и сто пятьдесяточков
-                            <strong>DPC</strong>.
+                        <img src="https://dota2.ru/img/flags/ph.png" alt="flag" title="country of team"> <strong>Mineski</strong> уже не смоглисобраться на решающую для них карту. Таким образом, <img src="https://dota2.ru/img/flags/world.png" alt="flag"
+                            title="country of team"> <strong>TeamLiquid</strong> побеждают со счетом <strong>3-1</strong> по картам истановятся двукратными чемпионами турниров серии <strong>Starladder i-League Invitational</strong>. Они зарабатывают сто тридцать
+                        пять тысяч долларов и сто пятьдесяточков
+                        <strong>DPC</strong>.
                     </p>
 
                     <p>Результаты <strong>Starladder i-League Invitational Season 3</strong>:</p>
@@ -295,6 +296,28 @@
         </footer>
     </div>
 
+    <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- easing plugin ( optional ) -->
+    <script src="assets/js/easing.js" type="text/javascript"></script>
+    <!-- UItoTop plugin -->
+    <script src="assets/js/jquery.ui.totop.js" type="text/javascript"></script>
+    <!-- Starting the plugin -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+            };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
 </body>
 
 </html>

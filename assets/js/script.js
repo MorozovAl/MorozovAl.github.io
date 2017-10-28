@@ -1,37 +1,23 @@
-$(document).ready(function() {
-    var elStream = $('.stream');
-    var elBlock = $('.block');
-    elStream.on('click', function() {
-        elBlock.css('display', 'block');
-    });
-    elBlock.on('click', function() {
-        elBlock.css('display', 'none');
-    });
-});
+var elStream = document.getElementsByClassName('stream');
+var elBlock = document.getElementsByClassName('stream__block');
+for (var i = 0; i < elStream.length; i++) {
+    elStream[i].addEventListener("click", z(i));
+}
 
+function z(a) {
+    return function() {
+        elBlock[a].style.display = "block";
+        elBlock[a].addEventListener("click", function() {
+            elBlock[a].style.display = "none";
+        });
 
-/*$(document).ready(function() {
-    var elStream = $('.stream');
-    var elBlock = $('.block');
-    alert("Колво стримов"+elStream.length);
-    alert("колво блоков"+elBlock.length)
-    for( var i = 0; i < elStream.length; i++) {
-        elStream[i].on('click', z(i))
     }
-        function z(a) {
-             return function() { elBlock[a].css('display', 'block') }
-        }
-});*/
+}
 
-/*
 $(document).ready(function() {
-    var elStream = $('.stream');
-    var elBlock = $('.block');
-        elStream.on('click', function() {
-            elBlock.toggle()
-        });
-        elBlock.on('click', function() {
-            elBlock.toggle()
-        });
+    $(".menubar").sticky({
+        topSpacing: 0,
+        getWidthFrom: '12.025vw'
+    });
 });
-*/
+

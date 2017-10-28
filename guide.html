@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://file.myfontastic.com/47pqL9qoLQkPdd2tmY4j5o/icons.css" rel="stylesheet">
-    <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" media="screen,projection" href="assets/css/ui.totop.css" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -100,8 +101,8 @@
                 <a href="teams.html" title="teams"><span class="icon-users"></span></a>
             </li>
         </ul>
-        
-        
+
+
 
         <div class="container">
 
@@ -498,7 +499,7 @@
 
                         <p>
                             Конечно, <img title="Morphling" src="https://dota2.ru/img/heroes/morphling/s_icon.jpg" alt="Morphling"> <strong>Morphling</strong> по-прежнему будет уязвим к «взрывному» урону, особенно магическому, но при этом он станет практически
-                            неуязвим к физическим атакам. К тому ж��, у героя будет примерно 30 брони, что сделает его ещё и ��анк��м.
+                            неуязвим к физическим атакам. К тому же у героя будет примерно 30 брони.
                         </p>
 
                         <p>
@@ -679,7 +680,7 @@
                         <strong>Blink</strong> вот-вот должен появиться. В случае, если вы обнаружите на этом месте вражеский <strong>Smoke</strong>, то имеете все шансы сделать первый ганг с <strong>Blink</strong> неудачным. Это, в свою очередь, может
                         серьезно повлиять на игру в вашу пользу.
                     </p>
-                    
+
                     <p>
                         Не забывайте и о ночном времени суток. Такие герои, как <img title="Night Stalker" src="https://dota2.ru/img/heroes/night_stalker/s_icon.jpg" alt="Night Stalker"> <strong>NS</strong> или <img title="Luna" src="https://dota2.ru/img/heroes/luna/s_icon.jpg"
                             alt="Luna"> <strong>Luna</strong> популярны во многом потому, что они дают дополнительный ночной обзор. Умение играть ночью (особенно в первые две) – важная задача для саппортов, так как именно тогда вражеские ганг- и роум-герои
@@ -704,6 +705,27 @@
         </footer>
     </div>
 
-</body>
+    <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- easing plugin ( optional ) -->
+    <script src="assets/js/easing.js" type="text/javascript"></script>
+    <!-- UItoTop plugin -->
+    <script src="assets/js/jquery.ui.totop.js" type="text/javascript"></script>
+    <!-- Starting the plugin -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+            };
+            */
 
-</html>
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+< /body>
+< /html>

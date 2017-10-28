@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://file.myfontastic.com/47pqL9qoLQkPdd2tmY4j5o/icons.css" rel="stylesheet">
-    <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" media="screen,projection" href="assets/css/ui.totop.css" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -103,7 +104,7 @@
 
 
         <div class="container">
-            
+
             <div class="block" id="liquid">
                 <h2>Обновление 7.06f для Dota 2</h2>
                 <div class="block__photo">
@@ -159,8 +160,8 @@
                         <li><img title="Wraith King" src="https://dota2.ru/img/heroes/wraith_king/s_icon.jpg" alt="Wraith King"> <strong>Wraith King</strong>: Талант 15 уровня изменен <strong>с +15 до +30 к скорости передвижения</strong></li>
                     </ul>
                 </div>
-            </div>    
-                
+            </div>
+
             <hr>
 
             <div class="block" id="liquid">
@@ -233,7 +234,7 @@
                     <img src="https://steamcdn-a.akamaihd.net/apps/570/icons/econ/loading_screens/the_havoc_of_dragon_palacesix_ear_the_havoc_of_dragon_palacesix_ear_large.2c074ba0c06020601a66f06bdcf4ca73aa851162.png" title="treasury" alt="treasury"></img>
                 </div>
                 <div class="block__text">
-                   <p><strong>Несколько минут назад Wykrhm Reddy в своем Twitter сообщил о добавлении в магазин Dota 2 нового сундука с сетами. Панель для покупки уже доступна в обновленном клиенте игры</strong></p>
+                    <p><strong>Несколько минут назад Wykrhm Reddy в своем Twitter сообщил о добавлении в магазин Dota 2 нового сундука с сетами. Панель для покупки уже доступна в обновленном клиенте игры</strong></p>
                     <p>Сокровищница также доступна <a href="http://www.dota2.com/store/itemdetails/12159?r=cd" target="_blank">для покупке в магазине</a> по цене<strong> $2,49 / 142 руб</strong>.</p>
                     <p><span class="block__orange-text"><strong>Содержит один из следующих сетов:</strong></span></p>
                     <ul>
@@ -266,6 +267,28 @@
         </footer>
     </div>
 
+    <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- easing plugin ( optional ) -->
+    <script src="assets/js/easing.js" type="text/javascript"></script>
+    <!-- UItoTop plugin -->
+    <script src="assets/js/jquery.ui.totop.js" type="text/javascript"></script>
+    <!-- Starting the plugin -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+            };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
 </body>
 
 </html>
