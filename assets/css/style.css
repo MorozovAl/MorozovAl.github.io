@@ -293,7 +293,7 @@ a:visited {
     position: absolute;
     left: -8.3vw;
     /*-138px/1600  */
-    width: 12.025vw;
+    width: 12.025vw !important;
     /*  200px/1600px  */
     margin: 6.912vw 0.1vw 0.1vw 0.1vw;
     /*  109px/1600 */
@@ -792,6 +792,12 @@ a:visited {
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
 }
+
+.links__element a {
+    text-decoration:none;
+    color: grey;
+}
+
 
 .copyright {
     display: block;

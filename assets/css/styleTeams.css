@@ -1,16 +1,3 @@
-.container__flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    width: 74.41vw;
-    margin-left: 12.195vw;
-    margin-top: 6.912vw;
-    padding: 1vw;
-
-    background-color: rgba(245, 245, 245, 0.1);
-}
-
 .block-team {
     position: relative;
 

@@ -2,13 +2,17 @@
 <html>
 
 <head>
-    <title></title>
+    <title>Dota 2</title>
+    
     <meta charset="utf-8">
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://file.myfontastic.com/47pqL9qoLQkPdd2tmY4j5o/icons.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" media="screen,projection" href="assets/css/ui.totop.css" />
+    <link rel="stylesheet" href="assets/css/styleStream.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 
@@ -18,7 +22,7 @@
         <!--HEADER----NAVIGATION/LOGO-->
         <header>
             <div class="logo">
-                <a href="index.html" title="dota2"><img src="http://cdn.dota2.com/apps/dota2/images/nav/logo.png"></img></a>
+                <a href="index.html" title="dota2"><img src="http://cdn.dota2.com/apps/dota2/images/nav/logo.png" alt="logo"></img></a>
             </div>
 
             <input type="checkbox" id="hmt" class="hidden-menu-ticker">
@@ -28,12 +32,12 @@
                 <span class="third"></span>
             </label>
             <ul class="hidden-menu">
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="guide.html">Гайды</a></li>
-                <li><a href="stream.html">Стримы</a></li>
-                <li><a href="media.html">Медиа</a></li>
-                <li><a href="update.html">Обновления</a></li>
-                <li><a href="teams.html">Команды</a></li>
+                <li><a href="news.html" title="news">Новости</a></li>
+                <li><a href="guide.html" title="guide">Гайды</a></li>
+                <li><a href="stream.html" title="streams">Стримы</a></li>
+                <li><a href="media.html" title="media">Медиа</a></li>
+                <li><a href="update.html" title="updates">Обновления</a></li>
+                <li><a href="teams.html" title="teams">Команды</a></li>
             </ul>
 
             <ul class="navigation">
@@ -109,7 +113,7 @@
         <div class="content-main">
             <!--CONTENT----NEWS-->
             <div class="content content_news">
-                <a href="" title="news"><span class="content__name">Новости</span></a>
+                <a href="news.html" title="news"><span class="content__name">Новости</span></a>
                 <div class="content__huge-block">
                     <div class="huge-block__hover">Liquid &ndash; Чемпионы</div>
                     <a href="news.html#liquid" title="liquid"><img src="assets/img/content/news/liquid.jpg" alt="Team liquid champions!"></img></a>
@@ -214,13 +218,13 @@
 
             <!--CONTENT----UPDATE-->
             <div class="content content_update">
-                <a href="" title="updates"><span class="content__name">Обновления</span></a>
+                <a href="update.html" title="updates"><span class="content__name">Обновления</span></a>
                 <div class="content__huge-block">
                     <div class="huge-block__hover">Обновление 7.06f для Dota 2</div>
-                    <a href="" title="update"><img src="assets/img/content/updates/update00.jpg" alt="7.06F Gameplay update"></img></a>
+                    <a href="update.html#7.06" title="update"><img src="assets/img/content/updates/update00.jpg" alt="7.06F Gameplay update"></img></a>
                 </div>
 
-                <a href="" title="new ticket">
+                <a href="update.html#sl" title="new ticket">
                     <div class="content__small-block">
                         <div class="content__small-block__left"><img src="assets/img/content/updates/update01.jpg" alt="SL INVITATIONAL"></img>
                         </div>
@@ -231,7 +235,7 @@
                     </div>
                 </a>
 
-                <a href="" title="Frostivus">
+                <a href="update.html#frostivus" title="Frostivus">
                     <div class="content__small-block">
                         <div class="content__small-block__left"><img src="assets/img/content/updates/update02.jpg" alt="Frostivus"></img>
                         </div>
@@ -242,7 +246,7 @@
                     </div>
                 </a>
 
-                <a href="" title="update MM">
+                <a href="update.html#mm" title="update MM">
                     <div class="content__small-block">
                         <div class="content__small-block__left"><img src="assets/img/content/updates/update03.jpg" alt="MM result"></img>
                         </div>
@@ -253,13 +257,13 @@
                     </div>
                 </a>
 
-                <a href="" title="new treasury">
+                <a href="update.html#treasury" title="new treasury">
                     <div class="content__small-block">
                         <div class="content__small-block__left"><img src="assets/img/content/updates/update04.jpg" alt="New treasury"></img>
                         </div>
                         <div class="content__small-block__right">
                             <h3>Новая сокровищница Treasure</h3>
-                            Несколь��о минут назад Wykrhm Reddy. в своем Twitter сообщил о добавлении в магазин Dota 2 нового сундука с сетами.
+                            Несколько минут назад Wykrhm Reddy. в своем Twitter сообщил о добавлении в магазин Dota 2 нового сундука с сетами.
                         </div>
                     </div>
                 </a>
@@ -268,7 +272,7 @@
 
             <!--CONTENT----MATCHES-->
             <div class="content__matches">
-                <a class="content__name" title="metches"><span >Матчи</span></a>
+                <div class="content__name"><span >Матчи</span></div>
 
                 <div class="matches__element">
                     <span class="matches__tournament">PD Cup EU23</span>
@@ -280,7 +284,7 @@
                         <div class="matches__opponents__flag"><img src="https://betscsgo.net/images/teams/cs/35x35/11273_5924e7ee02c71.png" alt="Logo team" title="Gambit"></div>
                         <span>Gambit</span>
                     </div>
-                    <div class="mathces__time">18.10 в 08:00</div>
+                    <div class="mathces__time">31.10 в 08:00</div>
                     <div class="mathces__across">До начала 1ч 15мин</div>
                 </div>
 
@@ -295,7 +299,7 @@
                         </div>
                         <span>WAY</span>
                     </div>
-                    <div class="mathces__time">18.10 в 08:30</div>
+                    <div class="mathces__time">31.10 в 08:30</div>
                     <div class="mathces__across">До начала 2ч 45мин</div>
                 </div>
 
@@ -309,7 +313,7 @@
                         <div class="matches__opponents__flag"><img src="https://betscsgo.net/images/teams/cs/35x35/11194_5926ffbd1b3e2.png" alt="Logo team" title="LYG"></div>
                         <span>LYG</span>
                     </div>
-                    <div class="mathces__time">18.10 в 09:15</div>
+                    <div class="mathces__time">31.10 в 09:15</div>
                     <div class="mathces__across">До начала 1ч 05мин</div>
                 </div>
 
@@ -323,7 +327,7 @@
                         <div class="matches__opponents__flag"><img src="https://betscsgo.net/images/teams/cs/35x35/11194_5926ffbd1b3e2.png" alt="Logo team" title="LYG"></div>
                         <span>LYG</span>
                     </div>
-                    <div class="mathces__time">18.10 в 04:30</div>
+                    <div class="mathces__time">31.10 в 04:30</div>
                     <div class="mathces__across">До начала 4ч 15мин</div>
                 </div>
 
@@ -337,7 +341,7 @@
                         <div class="matches__opponents__flag"><img src="https://betscsgo.net/images/teams/cs/35x35/264_592309d91ab80.png" alt="Logo team" title="Mongolz"></div>
                         <span>Mongolz</span>
                     </div>
-                    <div class="mathces__time">19.10 в 08:20</div>
+                    <div class="mathces__time">31.10 в 08:20</div>
                     <div class="mathces__across">До начала 4ч 0мин</div>
                 </div>
 
@@ -351,7 +355,7 @@
                         <div class="matches__opponents__flag"><img src="https://betscsgo.net/images/teams/cs/35x35/91_594dc6587e2d8.png" alt="Logo team" title="Newbee"></div>
                         <span>Newbee</span>
                     </div>
-                    <div class="mathces__time">19.10 в 09:00</div>
+                    <div class="mathces__time">31.10 в 09:00</div>
                     <div class="mathces__across">До начала 1ч 10мин</div>
                 </div>
 
@@ -360,41 +364,57 @@
 
             <!--CONTENT----STREAM-->
             <ul class="content__stream">
-                <a href="" title="stream"><span class="content__name">Стримы</span></a>
-                <a href="" title="versuta">
+
+                <a href="stream.html" title="stream"><span class="content__name">Стримы</span></a>
+                <div class="stream">
                     <li class="stream__element">
                         <span>Versuta</span>
                         <img src="assets/img/content/stream/country/Russia.ico" alt="Flag" title="Russia"></img>
                     </li>
-                </a>
+                </div>
+                <div class="stream__block">
+                    <iframe src="https://player.twitch.tv/?channel=versuta&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+                </div>
 
-                <a href="" title="AltaOda">
+                <div class="stream">
                     <li class="stream__element">
                         <span>AltaOda</span>
                         <img src="assets/img/content/stream/country/Ukraine.ico" alt="Flag" title="Ukraine"></img>
                     </li>
-                </a>
+                </div>
+                <div class="stream__block">
+                    <iframe src="https://player.twitch.tv/?channel=a1taoda&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+                </div>
 
-                <a href="" title="DreamLeague">
+                <div class="stream">
                     <li class="stream__element">
                         <span>DreamLeague</span>
                         <img src="assets/img/content/stream/country/USA.ico" alt="Flag" title="USA"></img>
                     </li>
-                </a>
+                </div>
+                <div class="stream__block">
+                    <iframe src="https://player.twitch.tv/?channel=dreamleague&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+                </div>
 
-                <a href="" title="ComeWithMe">
+                <div class="stream">
                     <li class="stream__element">
                         <span>ComeWithMe</span>
                         <img src="assets/img/content/stream/country/Canada.ico" alt="Flag" title="Canada"></img>
                     </li>
-                </a>
+                </div>
+                <div class="stream__block">
+                    <iframe src="https://player.twitch.tv/?channel=comewithme&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+                </div>
 
-                <a href="" title="JoinDota">
+                <div class="stream">
                     <li class="stream__element">
-                        <span>JoinDota</span>
+                        <span>Dread</span>
                         <img src="assets/img/content/stream/country/USA.ico" alt="Flag" title="USA"></img>
                     </li>
-                </a>
+                </div>
+                <div class="stream__block">
+                    <iframe src="https://player.twitch.tv/?channel=dreadztv&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+                </div>
 
             </ul>
         </div>
@@ -402,38 +422,24 @@
         <!--FOOTER-->
         <footer class="footer">
             <ul class="links">
-                <li class="links__element"><a><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                <li class="links__element"><a><i class="fa fa-instagram" aria-hidden="true"></i></img></a></li>
-                <li class="links__element"><a><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                <li class="links__element"><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li class="links__element"><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a href="https://vk.com" title="vk"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a  href="https://www.instagram.com/" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></img></a></li>
+                <li class="links__element"><a href="https://www.skype.com/ru/" title="skype"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a href="https://twitter.com/?lang=ru" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a href="https://www.facebook.com/" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             </ul>
             <span class="copyright">&copy; Morozov Aleksandr, 2017</span>
         </footer>
     </div>
 
+    <!--fixed menubar-->
     <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+    <!--my js-->
     <script type="text/javascript" src="assets/js/script.js"></script>
     <!-- easing plugin ( optional ) -->
     <script src="assets/js/easing.js" type="text/javascript"></script>
     <!-- UItoTop plugin -->
     <script src="assets/js/jquery.ui.totop.js" type="text/javascript"></script>
-    <!-- Starting the plugin -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            /*
-            var defaults = {
-            containerID: 'toTop', // fading element id
-            containerHoverID: 'toTopHover', // fading element hover id
-            scrollSpeed: 1200,
-            easingType: 'linear'
-            };
-            */
-
-            $().UItoTop({ easingType: 'easeOutQuart' });
-
-        });
-    </script>
 </body>
 
 </html>

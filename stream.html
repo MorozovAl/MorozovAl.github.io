@@ -2,17 +2,18 @@
 <html>
 
 <head>
-    <title></title>
     <meta charset="utf-8">
+    
+    <title>Стримы</title>
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://file.myfontastic.com/47pqL9qoLQkPdd2tmY4j5o/icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/styleMedia.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/styleTeams.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/styleStream.css" type="text/css" />
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" media="screen,projection" href="assets/css/ui.totop.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/styleStream.css" type="text/css" />
+    
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 
@@ -21,7 +22,7 @@
         <!--HEADER----NAVIGATION/LOGO-->
         <header>
             <div class="logo">
-                <a href="index.html" title="dota2"><img src="http://cdn.dota2.com/apps/dota2/images/nav/logo.png"></img></a>
+                <a href="index.html" title="dota2"><img src="http://cdn.dota2.com/apps/dota2/images/nav/logo.png" alt="logo"></img></a>
             </div>
 
             <input type="checkbox" id="hmt" class="hidden-menu-ticker">
@@ -31,12 +32,12 @@
                 <span class="third"></span>
             </label>
             <ul class="hidden-menu">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="guide.html">Гайды</a></li>
-                <li><a href="">Стримы</a></li>
-                <li><a href="teams.html">Команды</a></li>
-                <li><a href="update.html">Обновления</a></li>
+                <li><a href="index.html" title="main">Главная</a></li>
+                <li><a href="news.html" title="news">Новости</a></li>
+                <li><a href="guide.html" title="guide">Гайды</a></li>
+                <li><a href="stream.html" title="stream">Стримы</a></li>
+                <li><a href="teams.html" title="teams">Команды</a></li>
+                <li><a href="update.html" title="updates">Обновления</a></li>
             </ul>
 
             <ul class="navigation">
@@ -49,7 +50,7 @@
                 <a href="guide.html" title="guide">
                     <li class="navigation__item">ГАЙДЫ</li>
                 </a>
-                <a href="" title="stream">
+                <a href="stream.html" title="stream">
                     <li class="navigation__item">СТРИМЫ</li>
                 </a>
                 <a href="teams.html" title="teams">
@@ -95,7 +96,7 @@
                 <a href="guide.html" title="guide"><span class="icon-guide-dog"></span></a>
             </li>
             <li class="menubar__item">
-                <a href="" title="stream"><span class="icon-twitch"></span></a>
+                <a href="stream.html" title="stream"><span class="icon-twitch"></span></a>
             </li>
             <li class="menubar__item">
                 <a href="teams.html" title="team"><span class="icon-users"></span></a>
@@ -106,110 +107,99 @@
         </ul>
 
 
-
+        <!--CONTENT-->    
         <div class="container__flex">
-            <div class="stream" href="">
+            
+            <div class="stream stream_mod">
                 <div class="content__huge-block">
                     <div class="huge-block__hover">a1taOda</div>
-                    <img src="assets/img/stream/streamers/alta.jpg" alt="Team liquid champions!"></img>
+                    <img src="assets/img/stream/streamers/alta.jpg" alt="altaOda" title="altaOda"></img>
                 </div>
             </div>
-
             <div class="stream__block">
                 <iframe src="https://player.twitch.tv/?channel=a1taoda&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
             </div>
 
-            <div class="stream" href="">
+
+            <div class="stream stream_mod">
                 <div class="content__huge-block">
                     <div class="huge-block__hover">CWM</div>
-                    <img src="assets/img/stream/streamers/comewithme.jpg" alt="CWM"></img>
+                    <img src="assets/img/stream/streamers/comewithme.jpg" alt="CWM" title="CWM"></img>
                 </div>
             </div>
-
             <div class="stream__block">
                 <iframe src="https://player.twitch.tv/?channel=comewithme&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
             </div>
 
-            <div class="stream" href="">
+
+            <div class="stream stream_mod">
                 <div class="content__huge-block">
                     <div class="huge-block__hover">w33</div>
-                    <img src="assets/img/stream/streamers/w33.jpg" alt="w33"></img>
+                    <img src="assets/img/stream/streamers/w33.jpg" alt="w33" title="w33"></img>
                 </div>
             </div>
-
             <div class="stream__block">
                 <iframe src="https://player.twitch.tv/?channel=w33haa&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
             </div>
 
-            <div class="stream" href="">
+
+            <div class="stream stream_mod">
                 <div class="content__huge-block">
                     <div class="huge-block__hover">dream legue</div>
-                    <img src="assets/img/stream/streamers/dream.jpg" alt="dream legue"></img>
+                    <img src="assets/img/stream/streamers/dream.jpg" alt="dream legue" title="dream legue"></img>
                 </div>
             </div>
-
             <div class="stream__block">
                 <iframe src="https://player.twitch.tv/?channel=dreamleague&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
             </div>
 
-            <div class="stream" href="">
+
+            <div class="stream stream_mod">
                 <div class="content__huge-block">
                     <div class="huge-block__hover">dread</div>
-                    <img src="assets/img/stream/streamers/dread.jpg" alt="dread"></img>
+                    <img src="assets/img/stream/streamers/dread.jpg" alt="dread" title="dread"></img>
                 </div>
             </div>
-
             <div class="stream__block">
                 <iframe src="https://player.twitch.tv/?channel=dreadztv&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
             </div>
+            
 
-            <div class="stream" href="">
+            <div class="stream stream_mod">
                 <div class="content__huge-block">
                     <div class="huge-block__hover">Versuta</div>
-                    <img src="assets/img/stream/streamers/verusta.jpg" alt="versuta"></img>
+                    <img src="assets/img/stream/streamers/verusta.jpg" alt="versuta" title="versutas"></img>
                 </div>
             </div>
-
             <div class="stream__block">
                 <iframe src="https://player.twitch.tv/?channel=versuta&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
             </div>
+            
         </div>
 
         <!--FOOTER-->
         <footer class="footer">
             <ul class="links">
-                <li class="links__element"><a><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                <li class="links__element"><a><i class="fa fa-instagram" aria-hidden="true"></i></img></a></li>
-                <li class="links__element"><a><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                <li class="links__element"><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li class="links__element"><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a href="https://vk.com" title="vk"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a  href="https://www.instagram.com/" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a href="https://www.skype.com/ru/" title="skype"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a href="https://twitter.com/?lang=ru" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a href="https://www.facebook.com/" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             </ul>
             <span class="copyright">&copy; Morozov Aleksandr, 2017</span>
         </footer>
     </div>
 
+    <!--plugin for fixed menubar-->
     <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+    
+    <!--my js-->
     <script type="text/javascript" src="assets/js/script.js"></script>
+    
     <!-- easing plugin ( optional ) -->
     <script src="assets/js/easing.js" type="text/javascript"></script>
     <!-- UItoTop plugin -->
     <script src="assets/js/jquery.ui.totop.js" type="text/javascript"></script>
-    <!-- Starting the plugin -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            /*
-            var defaults = {
-            containerID: 'toTop', // fading element id
-            containerHoverID: 'toTopHover', // fading element hover id
-            scrollSpeed: 1200,
-            easingType: 'linear'
-            };
-            */
-
-            $().UItoTop({ easingType: 'easeOutQuart' });
-
-        });
-    </script>
 </body>
 
 </html>

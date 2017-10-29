@@ -2,17 +2,19 @@
 <html>
 
 <head>
-    <title></title>
     <meta charset="utf-8">
+    
+    <title>Команды</title>
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://file.myfontastic.com/47pqL9qoLQkPdd2tmY4j5o/icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/styleTeams.css" type="text/css" />
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" media="screen,projection" href="assets/css/ui.totop.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/styleTeams.css" type="text/css" />
+    
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -20,7 +22,7 @@
         <!--HEADER----NAVIGATION/LOGO-->
         <header>
             <div class="logo">
-                <a href="index.html" title="dota2"><img src="http://cdn.dota2.com/apps/dota2/images/nav/logo.png"></img></a>
+                <a href="index.html" title="dota2"><img src="http://cdn.dota2.com/apps/dota2/images/nav/logo.png" alt="logo"></img></a>
             </div>
 
             <input type="checkbox" id="hmt" class="hidden-menu-ticker">
@@ -30,12 +32,12 @@
                 <span class="third"></span>
             </label>
             <ul class="hidden-menu">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="guide.html">Гайды</a></li>
-                <li><a href="stream.html">Стримы</a></li>
-                <li><a href="media.html">Медиа</a></li>
-                <li><a href="update.html">ОБНОВЛЕНИЯ</a></li>
+                <li><a href="index.html" title="main">Главная</a></li>
+                <li><a href="news.html" title="news">Новости</a></li>
+                <li><a href="guide.html" title="guide">Гайды</a></li>
+                <li><a href="stream.html" title="stream">Стримы</a></li>
+                <li><a href="media.html" title="media">Медиа</a></li>
+                <li><a href="update.html" title="updates">Обновления</a></li>
             </ul>
 
             <ul class="navigation">
@@ -94,21 +96,22 @@
                 <a href="guide.html" title="guide"><span class="icon-guide-dog"></span></a>
             </li>
             <li class="menubar__item">
-                <a href=stream.html "" title="stream"><span class="icon-twitch"></span></a>
+                <a href="stream.html" title="stream"><span class="icon-twitch"></span></a>
             </li>
             <li class="menubar__item">
-                <a href="media.html" title="media"><span class="icon-play-video"></span></a>
+                <a href="teams.html" title="team"><span class="icon-users"></span></a>
             </li>
             <li class="menubar__item">
                 <a href="update.html" title="updates"><span class="icon-pencil-square-o"></span></a>
             </li>
         </ul>
 
-
+        <!--CONTENT-->
         <div class="container__flex">
-
+            
+            <!--CONTENT LIQUID-->
             <div class="block-team">
-
+                
                 <input type="checkbox" class="flipers" id="flip">
                 <label class="backfaces" for="flip">
                     <div class="front"> <img src="assets/img/content/logo-team/liquid.png" alt="liquid" title="liquid"></img> </div>
@@ -165,7 +168,7 @@
 
             </div>
 
-
+            <!--CONTENT NAVI-->
             <div class="block-team">
 
                 <input type="checkbox" class="flipers" id="flip1">
@@ -224,7 +227,7 @@
 
             </div>
 
-
+            <!--CONTENT EG-->
             <div class="block-team">
 
                 <input type="checkbox" class="flipers" id="flip2">
@@ -282,7 +285,8 @@
                 </label>
 
             </div>
-
+            
+            <!--CONTENT SECRET-->
             <div class="block-team">
 
                 <input type="checkbox" class="flipers" id="flip3">
@@ -341,6 +345,7 @@
 
             </div>
 
+            <!--CONTENT VP-->
             <div class="block-team">
 
                 <input type="checkbox" class="flipers" id="flip4">
@@ -399,6 +404,7 @@
 
             </div>
 
+            <!--CONTENT ELEMENTS-->
             <div class="block-team">
 
                 <input type="checkbox" class="flipers" id="flip5">
@@ -457,6 +463,7 @@
 
             </div>
 
+            <!--CONTENT VEGA-->
             <div class="block-team">
 
                 <input type="checkbox" class="flipers" id="flip6">
@@ -514,7 +521,8 @@
                 </label>
 
             </div>
-
+            
+            <!--CONTENT GAMBIT-->
             <div class="block-team">
 
                 <input type="checkbox" class="flipers" id="flip7">
@@ -573,6 +581,7 @@
 
             </div>
 
+            <!--CONTENT SPIRIT-->
             <div class="block-team">
 
                 <input type="checkbox" class="flipers" id="flip8">
@@ -631,6 +640,7 @@
 
             </div>
 
+            <!--CONTENT MVP-->
             <div class="block-team">
 
                 <input type="checkbox" class="flipers" id="flip9">
@@ -697,38 +707,26 @@
         <!--FOOTER-->
         <footer class="footer">
             <ul class="links">
-                <li class="links__element"><a><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                <li class="links__element"><a><i class="fa fa-instagram" aria-hidden="true"></i></img></a></li>
-                <li class="links__element"><a><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                <li class="links__element"><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li class="links__element"><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a href="https://vk.com" title="vk"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a  href="https://www.instagram.com/" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a href="https://www.skype.com/ru/" title="skype"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a href="https://twitter.com/?lang=ru" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="links__element"><a href="https://www.facebook.com/" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             </ul>
             <span class="copyright">&copy; Morozov Aleksandr, 2017</span>
         </footer>
     </div>
+    
+    <!--plugin for fixed menubar-->
     <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+    
+    <!--my js-->
     <script type="text/javascript" src="assets/js/script.js"></script>
+    
     <!-- easing plugin ( optional ) -->
     <script src="assets/js/easing.js" type="text/javascript"></script>
     <!-- UItoTop plugin -->
     <script src="assets/js/jquery.ui.totop.js" type="text/javascript"></script>
-    <!-- Starting the plugin -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            /*
-            var defaults = {
-            containerID: 'toTop', // fading element id
-            containerHoverID: 'toTopHover', // fading element hover id
-            scrollSpeed: 1200,
-            easingType: 'linear'
-            };
-            */
-
-            $().UItoTop({ easingType: 'easeOutQuart' });
-
-        });
-    </script>
-
 </body>
 
 </html>
