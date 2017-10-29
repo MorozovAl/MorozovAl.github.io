@@ -29,10 +29,18 @@
 }
 
 .tab__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     padding: 1vw;
     border-radius: 3px;
@@ -56,11 +64,16 @@
     border-radius: 0.5vw;
     border: 1px solid white;
     overflow: hidden;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .tab__item__photo:hover {
-    box-shadow: 0 0 1vw white;
+    -webkit-box-shadow: 0 0 1vw white;
+            box-shadow: 0 0 1vw white;
     -webkit-transform: scale(1.01);
     -ms-transform: scale(1.01);
     transform: scale(1.01);

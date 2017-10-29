@@ -8,8 +8,13 @@
 }
 
 .container__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 
     width: 74.41vw;
@@ -120,6 +125,11 @@ blockquote {
 
 
 @media screen and (max-width: 645px) {
+    .container__flex {
+        width: 96%;
+        margin: 50px auto;
+    }
+    
     .block {
         font-size: 2.98vw;
         line-height: 4.47vw;
