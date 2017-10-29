@@ -88,6 +88,19 @@ blockquote {
     background-color: rgba(245, 245, 245, 0.1);
 }
 
+@media screen and (min-width: 1930px) {
+    .container,
+    .container__flex {
+        max-width: 1429px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .stream {
+        max-width: 413.39px;
+        max-height: 240.36px; 
+    }
+}
 
 @media screen and (max-width: 1400px) {
     .block {

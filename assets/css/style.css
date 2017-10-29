@@ -46,6 +46,19 @@ a:visited {
     width: 100%;
 }
 
+.logo-media-query {
+    display: none;
+    width: 96%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-media-query img {
+    width: 70%;
+    margin-left: 15%;
+}
+
 /*HEADER----NAVIGATION*/
 
 .hidden-menu {
@@ -62,7 +75,7 @@ a:visited {
 
     -webkit-box-sizing: border-box;
 
-            box-sizing: border-box;
+    box-sizing: border-box;
     background-color: rgba(245, 245, 245, 0.9);
     /*#666*/
     list-style: none;
@@ -80,14 +93,14 @@ a:visited {
     font-size: 8vw;
     text-decoration: none;
     list-style: none;
-    color: rgba(0,0,0,0.6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .hidden-menu a:hover {
     -webkit-transition: color 0.5s;
     -o-transition: color 0.5s;
     transition: color 0.5s;
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
 }
 
 .hidden-menu-ticker {
@@ -121,7 +134,7 @@ a:visited {
     height: 5px;
     margin: 5px 0 0;
 
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -161,7 +174,7 @@ a:visited {
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 
     width: 50%;
     margin: 0 auto;
@@ -515,7 +528,7 @@ a:visited {
     width: 100%;
     height: 12.4vw;
     border-radius: 0.5vw;
-    border: 0.06vw solid grey;
+    border: 1px solid grey;
 
     overflow: hidden;
     cursor: pointer;
@@ -778,6 +791,7 @@ a:visited {
 }
 
 /*FOOTER*/
+
 .footer {
     width: 100%;
     height: 5vw;
@@ -819,7 +833,7 @@ a:visited {
 }
 
 .links__element a {
-    text-decoration:none;
+    text-decoration: none;
     color: grey;
 }
 
@@ -835,6 +849,40 @@ a:visited {
     color: silver;
 }
 
+@media screen and (min-width: 1930px) {
+    .content-main {
+        max-width: 1429px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content {
+        max-width: 464px;
+    }
+
+    .content__huge-block {
+        max-height: 240.36px;
+    }
+
+    .huge-block__hover {
+        margin-top: 241.36px;
+        max-height: 38.39px;
+        font-size: 28px;
+    }
+
+    .content__huge-block:hover .huge-block__hover {
+        -webkit-transform: translateY(-38.39px);
+
+        -ms-transform: translateY(-38.39px);
+
+        transform: translateY(-100%);
+    }
+
+    .content__small-block {
+        max-height: 109.7px;
+        font-size: 15px;
+    }
+}
 
 
 
@@ -1164,6 +1212,10 @@ a:visited {
 @media screen and (max-width: 645px) {
     .navigation {
         display: none;
+    }
+    
+    .logo-media-query {
+        display: block;
     }
 
     .slider {

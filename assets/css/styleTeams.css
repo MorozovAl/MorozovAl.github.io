@@ -87,6 +87,19 @@ input {
 }
 
 
+@media screen and (min-width: 1930px) {
+    .block-team {
+        margin: 0;
+        max-width: 384px;
+        max-height: 384px;
+        font-size: 16px;
+    }
+    
+    .back span {
+        margin-top: 38.4px;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     .block-team {
         font-size: 1.3vw;
