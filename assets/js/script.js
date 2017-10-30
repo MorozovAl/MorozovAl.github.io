@@ -1,13 +1,4 @@
-/*preloader*/
-$(document).ready(function() {
-    setTimeout(function() {
-        $('body').addClass('loaded');
-    }, 750);
 
-    /*$('.reset').click(function() {
-            $('body').removeClass('loaded');
-    });*/
-});
 
 /*for stream*/
 var elStream = document.getElementsByClassName('stream');
@@ -51,4 +42,16 @@ $(document).ready(function() {
         $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
         $(".tab__item").hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass("active");
+});
+
+
+/*preloader*/
+$(document).ready(function() {
+    setTimeout(function() {
+        $('body').addClass('loaded');
+    }, 750);
+
+    /*$('.reset').click(function() {
+            $('body').removeClass('loaded');
+    });*/
 });
