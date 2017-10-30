@@ -1,3 +1,14 @@
+/*preloader*/
+$(document).ready(function() {
+    setTimeout(function() {
+        $('body').addClass('loaded');
+    }, 750);
+
+    /*$('.reset').click(function() {
+            $('body').removeClass('loaded');
+    });*/
+});
+
 /*for stream*/
 var elStream = document.getElementsByClassName('stream');
 var elBlock = document.getElementsByClassName('stream__block');

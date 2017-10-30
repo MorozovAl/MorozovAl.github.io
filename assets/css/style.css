@@ -6,6 +6,7 @@ body {
     background-color: black;
     background-image: url(../img/bg/bg2.jpg);
     background-size: contain;
+    text-align: justify;
 }
 
 .text-center {
