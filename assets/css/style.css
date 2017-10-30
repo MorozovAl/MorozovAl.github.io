@@ -851,6 +851,21 @@ a:visited {
 }
 
 @media screen and (min-width: 1930px) {
+    .menubar {
+        max-width: 230px;
+    }
+
+    .icon-news::after,
+    .icon-guide-dog::after,
+    .icon-twitch::after,
+    .icon-play-video::after,
+    .icon-pencil-square-o::after,
+    .icon-users::after {
+        font-size: 18px;
+    }
+
+
+
     .content-main {
         max-width: 1429px;
         margin-left: auto;
@@ -882,6 +897,12 @@ a:visited {
     .content__small-block {
         max-height: 109.7px;
         font-size: 15px;
+    }
+
+    .copyright {
+        width: 300px;
+        font-size: 24px;
+
     }
 }
 
@@ -1214,7 +1235,7 @@ a:visited {
     .navigation {
         display: none;
     }
-    
+
     .logo-media-query {
         display: block;
     }
