@@ -349,6 +349,28 @@ a:visited {
     transition: transform 1s, -webkit-transform 1s;
 }
 
+.menubar__touch {
+    position: absolute;
+    left: 0;
+    /*-138px/1600  */
+    width: 12.025vw !important;
+    /*  200px/1600px  */
+    margin: 6.912vw 0.1vw 0.1vw 0.1vw;
+    /*  109px/1600 */
+    list-style: none;
+    padding-left: 0;
+    float: left;
+
+    background-color: rgba(245, 245, 245, 0.08);
+    font-size: 1vw;
+    /*  16px/1600  */
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+}
+
 .menubar__icon {
     display: inline-block;
     float: right;
@@ -851,7 +873,8 @@ a:visited {
 }
 
 @media screen and (min-width: 1930px) {
-    .menubar {
+    .menubar,
+    .menubar__touch {
         max-width: 230px;
     }
 
@@ -1099,7 +1122,8 @@ a:visited {
         top: 8.6vw;
     }
 
-    .menubar {
+    .menubar,
+    .menubar__touch {
         display: none;
     }
 
